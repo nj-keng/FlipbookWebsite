@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <meta charset="utf-8">
-    <title>Flipbook Entertainment</title>
-  </head>
-  <body>
-    <script src="../js/instafeed.min.js"></script>
-    <script src="../js/script.js"></script>
-    <div id="insta-contain">
-      <p>This is a test instagram page.</p>
-      <div id="instafeed">
 
-      <nav>
-        <ul>
-          <li><img src="../img/logo.png" alt="flipbook_log">Flipbook Entertainment</li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">How it Works</a></li>
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+<head>
+  <meta charset="utf-8">
+  <title>Flipbook Entertainment</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
 
-      
+<body>
+  <div class="pagewrap">
+    <!-- Navigation Bar -->
+    <nav id="nav_bar">
+      <!-- Logo and the Site Name -->
+      <span id="nav_logo">
+        <img src="../img/logo.png" alt="flipbook_log">
+        <h1 id="site_name">FLIPBOOK ENTERTAINMENT</h1>
+      </span>
+      <span></span>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">How it Works</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
+    <div class="content">
       <div class="home">
 
       </div>
@@ -48,37 +50,57 @@
 
       <div class="contact">
         <!-- <div class="email content">
-          <div class="email-form s-general-form" data-component="contact_form">
-            <div class="form s-form-not-success">
-              <form class="new_collected_email" id="new_collected_email" action="http://www.flipbookentertainment.co/i/flipbookentertainment/collected_emails.jsm" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input
-                  type="hidden" name="collected_email[recipient]" id="collected_email_recipient"> <input type="hidden" value="false" name="collected_email[skip_email]" id="collected_email_skip_email"> <input type="hidden" value="false" name="collected_email[skip_name]"
-                  id="collected_email_skip_name"> <input type="hidden" value="false" name="collected_email[skip_phone_number]" id="collected_email_skip_phone_number">
-                <div class="input"> <label class="outside" style="font-family: &#39;open sans&#39;, helvetica, sans-serif;">Name</label> <input type="text" name="collected_email[name]" id="collected_email_name">
-                  <div class="error s-form-error-name" style="display: none;">Please enter a name.</div>
-                </div>
-                <div class="input"> <label class="outside" style="font-family: &#39;open sans&#39;, helvetica, sans-serif;">Email</label> <input type="text" name="collected_email[email]" id="collected_email_email">
-                  <div class="error s-form-error-email" style="display: none;">Invalid email.</div>
-                </div>
-                <div class="input"> <label class="outside" style="font-family: &#39;open sans&#39;, helvetica, sans-serif;">Phone</label> <input id="collected_email_phone_number" name="collected_email[phone_number]" type="text">
-                  <div class="error s-form-error-phone_number" style="display: none;">Invalid phone number.</div>
-                </div>
-                <div class="input"> <label class="outside" style="font-family: &#39;open sans&#39;, helvetica, sans-serif;">Message</label> <textarea html="{:rows=&gt;4, :cols=&gt;35}" name="collected_email[comment]" id="collected_email_comment"></textarea>
-                </div>
-                <div class="input" style="display:none;"> <label class="outside">Comment</label> <input type="text" name="_comment" id="_comment"> </div>
-                <div class="input"> <input class="submit-button s-form-click" type="button" value="Submit" style="font-family: &#39;open sans&#39;, helvetica, sans-serif;">
-                  <div class="loading-icon s-form-icon" style="display:none;"></div>
-                </div>
-              </form>
+            <div class="email-form s-general-form" data-component="contact_form">
+              <div class="form s-form-not-success">
+                <form class="new_collected_email" id="new_collected_email" action="http://www.flipbookentertainment.co/i/flipbookentertainment/collected_emails.jsm" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input
+                    type="hidden" name="collected_email[recipient]" id="collected_email_recipient"> <input type="hidden" value="false" name="collected_email[skip_email]" id="collected_email_skip_email"> <input type="hidden" value="false" name="collected_email[skip_name]"
+                    id="collected_email_skip_name"> <input type="hidden" value="false" name="collected_email[skip_phone_number]" id="collected_email_skip_phone_number">
+                  <div class="input"> <label class="outside" style="font-family: &#39;open sans&#39;, helvetica, sans-serif;">Name</label> <input type="text" name="collected_email[name]" id="collected_email_name">
+                    <div class="error s-form-error-name" style="display: none;">Please enter a name.</div>
+                  </div>
+                  <div class="input"> <label class="outside" style="font-family: &#39;open sans&#39;, helvetica, sans-serif;">Email</label> <input type="text" name="collected_email[email]" id="collected_email_email">
+                    <div class="error s-form-error-email" style="display: none;">Invalid email.</div>
+                  </div>
+                  <div class="input"> <label class="outside" style="font-family: &#39;open sans&#39;, helvetica, sans-serif;">Phone</label> <input id="collected_email_phone_number" name="collected_email[phone_number]" type="text">
+                    <div class="error s-form-error-phone_number" style="display: none;">Invalid phone number.</div>
+                  </div>
+                  <div class="input"> <label class="outside" style="font-family: &#39;open sans&#39;, helvetica, sans-serif;">Message</label> <textarea html="{:rows=&gt;4, :cols=&gt;35}" name="collected_email[comment]" id="collected_email_comment"></textarea>
+                  </div>
+                  <div class="input" style="display:none;"> <label class="outside">Comment</label> <input type="text" name="_comment" id="_comment"> </div>
+                  <div class="input"> <input class="submit-button s-form-click" type="button" value="Submit" style="font-family: &#39;open sans&#39;, helvetica, sans-serif;">
+                    <div class="loading-icon s-form-icon" style="display:none;"></div>
+                  </div>
+                </form>
+              </div>
+              <div class="hint s-form-success thanks" style="display: none; font-family: &#39;open sans&#39;, helvetica, sans-serif;">Thanks for your message!</div>
             </div>
-            <div class="hint s-form-success thanks" style="display: none; font-family: &#39;open sans&#39;, helvetica, sans-serif;">Thanks for your message!</div>
-          </div>
-        </div> -->
-      </div>
-
-      <footer>
-
-      </footer>
+          </div> -->
       </div>
     </div>
-  </body>
+
+
+    <footer>
+
+    </footer>
+  </div>
+
+  <script>
+    window.onscroll = function() {
+      sticky_nav()
+    };
+
+    var nav_bar = document.getElementById("nav_bar");
+    var sticky = nav_bar.offsetTop;
+
+    function sticky_nav() {
+      if (window.pageYOffset >= sticky) {
+        nav_bar.classList.add("sticky")
+      } else {
+        nav_bar.classList.remove("sticky");
+      }
+    }
+  </script>
+
+</body>
+
 </html>
