@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <meta charset="utf-8">
-    <title>Flipbook Entertainment</title>
-  </head>
-  <body>
-    <script src="../js/instafeed.min.js"></script>
-    <script src="../js/script.js"></script>
-    <div id="insta-contain">
-      <p>This is a test instagram page.</p>
-      <div id="instafeed">
 
-      <nav>
-        <ul>
-          <li><img src="../img/logo.png" alt="flipbook_log">Flipbook Entertainment</li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">How it Works</a></li>
-          <li><a href="#">Our Story</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+<head>
+  <!-- Link to the webpage's css stylesheet. -->
+  <meta charset="utf-8">
+  <title>Flipbook Entertainment</title>
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
 
-      
+<body>
+  <nav>
+    <ul>
+      <li><img src="../img/logo.png" alt="flipbook_log">Flipbook Entertainment</li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">How it Works</a></li>
+      <li><a href="#">Our Story</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
 
-      <div class="home">
 
-      </div>
 
-      <div class="how_it_works">
+  <div class="home">
 
-      </div>
+  </div>
 
-      <div class="our_story">
+  <div class="how_it_works">
 
-      </div>
+  </div>
 
-      <div class="pricing">
+  <div class="our_story">
 
-      </div>
+  </div>
 
-      <div class="features">
+  <div class="pricing">
 
-      </div>
+  </div>
 
-      <div class="contact">
-        <!-- <div class="email content">
+  <div class="features">
+
+  </div>
+
+  <div class="contact">
+    <!-- <div class="email content">
           <div class="email-form s-general-form" data-component="contact_form">
             <div class="form s-form-not-success">
               <form class="new_collected_email" id="new_collected_email" action="http://www.flipbookentertainment.co/i/flipbookentertainment/collected_emails.jsm" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input
@@ -73,12 +70,22 @@
             <div class="hint s-form-success thanks" style="display: none; font-family: &#39;open sans&#39;, helvetica, sans-serif;">Thanks for your message!</div>
           </div>
         </div> -->
-      </div>
+  </div>
+  <!-- Link to the instagram feed widget. -->
+  <script src="../js/instafeed.min.js"></script>
+  <!-- Link to the script that can be used to configure what is displayed. -->
+  <script src="../js/script.js"></script>
+  <!-- Container for the instagram feed. -->
+  <div id="insta-contain">
+    <!-- Text to be displayed on the webpage. -->
+    <p id="ig"><img src="../img/instagram-icon.png" /> Click <a id="igLink" target="_blank" href="https://www.instagram.com/flipbookentertainment/">here</a> to follow us on Instagram.</p>
+    <!-- All of the content in the script is being stored in this div. Don't change the name of the id!. -->
+    <div id="instafeed"></div>
+    <!-- End of instagram feed container. -->
+  </div>
+  <footer>
 
-      <footer>
+  </footer>
+</body>
 
-      </footer>
-      </div>
-    </div>
-  </body>
 </html>
