@@ -12,6 +12,17 @@ body{
   padding: 0;
   margin: 0;
 }
+nav{
+  overflow: hidden;
+  background-color: rgb(158, 179, 96);
+  display: grid;
+  grid-template-columns: 27em auto 37em;
+  z-index: 1;
+}
+
+nav img{
+  width: 7em;
+}
 
 #nav_logo{
    padding: 5px;
@@ -58,8 +69,12 @@ body{
 
 /* -------------------------------------------------------------------------------- */
 
+
 #contact{
   background-color: rgb(149, 152, 86);
+}
+
+/* -------------------------------------------------------------------------------- */
 $lg: 580px;
 
 #instafeed {
@@ -68,24 +83,69 @@ $lg: 580px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-
-  a {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    background: white;
-  }
+  position: relative;
 }
-img {
+#igLink {
+  text-decoration: none;
+  color: #9f9939;
+}
+#igLink img {
+  height: 25px;
+}
+#ig {
+  font-size: 15pt;
+  margin-top: 0px;
+}
+#ig img {
+  //height: 50px;
+  vertical-align: middle;
+}
+.igFeed {
+  display: inline-block;
+  margin: 5px;
+}
+.igImage {
+  display: block;
+}
+.igCaptionLeft {
+  float: left;
+  margin-left: 5px;
+}
+.igCaptionRight {
+  float: right;
+}
+.igIcon {
+  height: 20px;
+}
+#instaContain {
+  margin-top: 55px;
+  text-align: center;
+  position: relative;
+}
+#instafeed .igImage {
   margin: 10px;
 }
-img:hover {
-  position: relative;
-  top: -5px;
+#instafeed .igFeed:hover {
+  filter: brightness(80%);
+  transition: .5s ease;
 }
-#insta-contain {
-  text-align: center;
-  border-style: solid;
-  border-color: lightgrey;
+.igText {
+  visibility: hidden;
+  transform: translateY(-90px);
+  color: white;
+}
+.igFeed:hover .igText {
+  visibility: visible;
+}
+.igInfo {
+  text-decoration: none;
+  font-size: 15pt;
+}
+.heart {
+  float: left;
+  margin-left: 20%;
+}
+.comment {
+  float: right;
+  margin-right: 20%;
 }
