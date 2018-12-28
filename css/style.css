@@ -12,56 +12,13 @@ body{
   padding: 0;
   margin: 0;
 }
-nav{
-  overflow: hidden;
-  background-color: rgb(158, 179, 96);
-  display: grid;
-  grid-template-columns: 27em auto 37em;
-}
-
-nav img{
-  width: 7em;
-}
 
 #nav_logo{
-    background-color: rgb(150, 204, 170);
-    padding-left: 30px;
+   padding: 5px;
+   padding-right: 10px;
 }
 
-nav #site_name{
-  float:
-  display: inline;
-  font-size: 1.2em;
-  background-color: rgb(88, 167, 200);
-  padding: 20px 0 20px 0;
-  margin: 0 0 20px 0;
-}
-
-nav ul{
-  text-align: center;
-  padding: 0;
-  display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-}
-
-ul li{
-  background-color: rgb(233, 139, 178);
-  list-style: none;
-  padding: .5em;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-}
-
-.home{
+#home{
   width: auto;
   height: 500px;
   background-color: rgb(178, 121, 210);
@@ -69,31 +26,40 @@ ul li{
 
 /* -------------------------------------------------------------------------------- */
 
-.how_it_works{
-
+#how_it_works{
+  width: auto;
+  height: 500px;
+  background-color: rgb(153, 212, 202);
 }
 
 /* -------------------------------------------------------------------------------- */
 
-.our_story{
-  background-color: rgb(99, 180, 182);
+#our_story{
+  width: auto;
+  height: 500px;
+  background-color: rgb(228, 189, 120);
 }
 
 /* -------------------------------------------------------------------------------- */
 
-.pricing{
-
+#pricing{
+  width: auto;
+  height: 500px;
+  background-color: rgb(104, 144, 158);
 }
 
 /* -------------------------------------------------------------------------------- */
 
-.features{
-
+#features{
+  width: auto;
+  height: 500px;
+  background-color: rgb(161, 133, 150);
 }
 
 /* -------------------------------------------------------------------------------- */
 
-.contact{
+#contact{
+  background-color: rgb(149, 152, 86);
 $lg: 580px;
 
 #instafeed {

@@ -4,51 +4,78 @@
 <head>
   <meta charset="utf-8">
   <title>Flipbook Entertainment</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../css/style.css">
+
 </head>
 
 <body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+
+      <div class="navbar-header">
+        <!-- Menu Icon -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Logo Name -->
+        <a id="nav_logo" class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo" width="60px"></a>
+        <a class="navbar-brand" href="#">FlipBook Entertainment</a>
+      </div>
+
+      <!-- Main Nav Options -->
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <!-- Home -->
+          <li><a href="#home">Home</a></li>
+
+          <!-- How it Works -->
+          <li><a href="#how_it_works">How it Works</a></li>
+
+          <!-- Our Story -->
+          <li><a href="#our_story">Our Story</a></li>
+
+          <!-- Pricing -->
+          <li><a href="#pricing">Pricing</a></li>
+
+          <!-- Features -->
+          <li><a href="#features">Features</a></li>
+
+          <!-- Contacts -->
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
   <div class="pagewrap">
-    <!-- Navigation Bar -->
-    <nav id="nav_bar">
-      <!-- Logo and the Site Name -->
-      <span id="nav_logo">
-        <img src="../img/logo.png" alt="flipbook_log">
-        <h1 id="site_name">FLIPBOOK ENTERTAINMENT</h1>
-      </span>
-      <span></span>
-      <ul>
-        <li><a class="active" href="#">Home</a></li>
-        <li><a href="#">How it Works</a></li>
-        <li><a href="#">Our Story</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-
     <div class="content">
-      <div class="home">
+      <div id="home">
 
       </div>
 
-      <div class="how_it_works">
+      <div id="how_it_works">
 
       </div>
 
-      <div class="our_story">
+      <div id="our_story">
 
       </div>
 
-      <div class="pricing">
+      <div id="pricing">
 
       </div>
 
-      <div class="features">
+      <div id="features">
 
       </div>
 
-      <div class="contact">
+      <div id="contact">
         <!-- <div class="email content">
             <div class="email-form s-general-form" data-component="contact_form">
               <div class="form s-form-not-success">
@@ -84,9 +111,9 @@
     </footer>
   </div>
 
-  <script>
+  <!-- <script>
     window.onscroll = function() {
-      sticky_nav()
+      sticky_nav();
     };
 
     var nav_bar = document.getElementById("nav_bar");
@@ -99,7 +126,7 @@
         nav_bar.classList.remove("sticky");
       }
     }
-  </script>
+  </script> -->
 
 </body>
 
