@@ -17,6 +17,7 @@ nav{
   background-color: rgb(158, 179, 96);
   display: grid;
   grid-template-columns: 27em auto 37em;
+  z-index: 1;
 }
 
 nav img{
@@ -106,16 +107,21 @@ $lg: 580px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  position: relative;
 }
 #igLink {
   text-decoration: none;
   color: #9f9939;
 }
+#igLink img {
+  height: 25px;
+}
 #ig {
   font-size: 15pt;
+  margin-top: 0px;
 }
 #ig img {
-  height: 50px;
+  //height: 50px;
   vertical-align: middle;
 }
 .igFeed {
@@ -132,14 +138,38 @@ $lg: 580px;
 .igCaptionRight {
   float: right;
 }
-#instaContain {
-  text-align: center;
+.igIcon {
+  height: 20px;
 }
-#instafeed img {
+#instaContain {
+  margin-top: 55px;
+  text-align: center;
+  position: relative;
+}
+#instafeed .igImage {
   margin: 10px;
 }
-#instafeed img:hover {
-  position: relative;
-  top: -5px;
-  box-shadow: 7px 7px #9f9939;
+#instafeed .igFeed:hover {
+  filter: brightness(80%);
+  transition: .5s ease;
+}
+.igText {
+  visibility: hidden;
+  transform: translateY(-90px);
+  color: white;
+}
+.igFeed:hover .igText {
+  visibility: visible;
+}
+.igInfo {
+  text-decoration: none;
+  font-size: 15pt;
+}
+.heart {
+  float: left;
+  margin-left: 20%;
+}
+.comment {
+  float: right;
+  margin-right: 20%;
 }
