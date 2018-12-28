@@ -58,8 +58,12 @@ body{
 
 /* -------------------------------------------------------------------------------- */
 
+
 #contact{
   background-color: rgb(149, 152, 86);
+}
+
+/* -------------------------------------------------------------------------------- */
 $lg: 580px;
 
 #instafeed {
@@ -68,24 +72,40 @@ $lg: 580px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-
-  a {
-    display: flex;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    background: white;
-  }
 }
-img {
+#igLink {
+  text-decoration: none;
+  color: #9f9939;
+}
+#ig {
+  font-size: 15pt;
+}
+#ig img {
+  height: 50px;
+  vertical-align: middle;
+}
+.igFeed {
+  display: inline-block;
+  margin: 5px;
+}
+.igImage {
+  display: block;
+}
+.igCaptionLeft {
+  float: left;
+  margin-left: 5px;
+}
+.igCaptionRight {
+  float: right;
+}
+#instaContain {
+  text-align: center;
+}
+#instafeed img {
   margin: 10px;
 }
-img:hover {
+#instafeed img:hover {
   position: relative;
   top: -5px;
-}
-#insta-contain {
-  text-align: center;
-  border-style: solid;
-  border-color: lightgrey;
+  box-shadow: 7px 7px #9f9939;
 }
