@@ -168,6 +168,8 @@ $lg: 580px;
 }
 @media screen and (max-width: 675px) {
   #instafeed {
-    background-color: red;
+    height: 200px;
+    width: auto;
+    overflow: hidden;
   }
 }
