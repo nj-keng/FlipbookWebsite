@@ -15,13 +15,12 @@ body{
 nav{
   overflow: hidden;
   background-color: rgb(158, 179, 96);
-  display: grid;
-  grid-template-columns: 27em auto 37em;
   z-index: 1;
 }
 
 nav img{
-  width: 7em;
+  width: 50px;
+  //padding: 10px;
 }
 
 #nav_logo{
