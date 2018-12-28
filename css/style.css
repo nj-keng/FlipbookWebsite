@@ -149,3 +149,26 @@ $lg: 580px;
   float: right;
   margin-right: 20%;
 }
+@media screen and (max-width: 1100px) {
+  #instafeed {
+    width: 55%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #instafeed {
+    width: 66%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 850px) {
+  #instafeed {
+    width: 85%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 675px) {
+  #instafeed {
+    background-color: red;
+  }
+}

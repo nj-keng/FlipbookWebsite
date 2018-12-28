@@ -90,8 +90,44 @@
           </div> -->
       </div>
     </div>
-  </div>
 
+
+    <footer>
+
+    </footer>
+  </div>
+  <!-- Link to the instagram feed script. -->
+  <script src="../js/instafeed.min.js"></script>
+  <!-- Link to the script that can be used to configure what is displayed. -->
+  <script src="../js/script.js"></script>
+  <!-- Container for the instagram feed. -->
+  <div id="instaContain">
+    <!-- All of the content in the script is being stored in this div. Don't change the name of the id!. -->
+    <div id="instafeed"></div>
+    <!-- Text to be displayed on the webpage. -->
+    <p id="ig"><b>@flipbookentertainment</b></p>
+    <p>
+      <a id="igLink" target="_blank" href="https://www.instagram.com/flipbookentertainment/"><img src="../img/instagram_icon.png" /></a>
+      <a id="igLink" target="_blank" href="https://www.facebook.com/Flipbookentertainmentbc/"><img src="../img/facebook_icon.png" /></a>
+    </p>
+    <!-- End of instagram feed container. -->
+  </div>
+  <script>
+    window.onscroll = function() {
+      sticky_nav()
+    };
+
+    var nav_bar = document.getElementById("nav_bar");
+    var sticky = nav_bar.offsetTop;
+
+    function sticky_nav() {
+      if (window.pageYOffset >= sticky) {
+        nav_bar.classList.add("sticky")
+      } else {
+        nav_bar.classList.remove("sticky");
+      }
+    }
+  </script>
 
 </body>
 
