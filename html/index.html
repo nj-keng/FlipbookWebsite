@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="../css/style.css">
-
 </head>
 
 <body>
@@ -112,23 +111,30 @@
     </p>
     <!-- End of instagram feed container. -->
   </div>
-  <script>
-    window.onscroll = function() {
-      sticky_nav()
-    };
+  <form method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbyLnUFYwF7juxOQc6Uhp5fsnIfpVeF6xtC83lhaCA/exec">
+    <fieldset class="pure-group">
+      <label for="name">Name: </label>
+      <input required id="name" name="name" />
+    </fieldset>
 
-    var nav_bar = document.getElementById("nav_bar");
-    var sticky = nav_bar.offsetTop;
+    <fieldset class="pure-group">
+      <label for="message">Message: </label>
+      <textarea id="message" name="message" rows="10" required></textarea>
+    </fieldset>
 
-    function sticky_nav() {
-      if (window.pageYOffset >= sticky) {
-        nav_bar.classList.add("sticky")
-      } else {
-        nav_bar.classList.remove("sticky");
-      }
-    }
-  </script>
+    <fieldset class="pure-group">
+      <label for="email">Phone Number (Optional):</label>
+      <input id="phone" name="phone" type="text" value="" pattern="[0-9]{10}" required />
+    </fieldset>
 
+    <fieldset class="pure-group">
+      <label for="email">Email Address:</label>
+      <input id="email" name="email" type="email" value="" required />
+      <button class="button-success pure-button button-xlarge">
+        <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+    </fieldset>
+  </form>
+  <script data-cfasync="false" type="text/javascript" src="../js/form-submission-handler.js"></script>
 </body>
 
 </html>
