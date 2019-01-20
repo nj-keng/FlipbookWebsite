@@ -101,7 +101,7 @@ div#how_it_works_steps>div:nth-of-type(even) {
   background-color: rgb(242, 242, 242);
 }
 
-#circle {
+.circle {
   width: 25px;
   height: 25px;
   border-radius: 50%;

@@ -12,34 +12,32 @@
 
 <body>
   <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="navbar-header">
-        <!-- Menu Icon -->
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <!-- Logo Name -->
-        <a id="nav_logo" class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo" width="60px"></a>
-        <a class="navbar-brand" href="#">Flipbook Entertainment</a>
-      </div>
+    <div class="navbar-header">
+      <!-- Menu Icon -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <!-- Logo Name -->
+      <a id="nav_logo" class="navbar-brand" href="#"><img src="../img/logo.png" alt="logo" width="60px"></a>
+      <a class="navbar-brand" href="#">Flipbook Entertainment</a>
+    </div>
 
-      <!-- Main Nav Options -->
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <!-- Home -->
-          <li><a href="#home">Home</a></li>
-          <!-- How it Works -->
-          <li><a href="#how_it_works">How it Works</a></li>
-          <!-- Pricing -->
-          <li><a href="#pricing">Pricing</a></li>
-          <!-- Our Story -->
-          <li><a href="#our_story">Our Story</a></li>
-          <!-- Contacts -->
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
+    <!-- Main Nav Options -->
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <!-- Home -->
+        <li><a href="#home">Home</a></li>
+        <!-- How it Works -->
+        <li><a href="#how_it_works">How it Works</a></li>
+        <!-- Pricing -->
+        <li><a href="#pricing">Pricing</a></li>
+        <!-- Our Story -->
+        <li><a href="#our_story">Our Story</a></li>
+        <!-- Contacts -->
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
@@ -63,7 +61,7 @@
                 <img src="../img/HIW/prop orange.png" alt="img">
               </div>
               <div class="steps_text">
-                <div id="circle">&nbsp;</div>
+                <div class="circle">&nbsp;</div>
                 <div class="text">
                   <h3>Step1</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
@@ -75,7 +73,7 @@
           <div class="steps">
             <div class="steps_content">
               <div class="steps_text">
-                <div id="circle">&nbsp;</div>
+                <div class="circle">&nbsp;</div>
                 <div class="text">
                   <h3>Step2</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
@@ -93,7 +91,7 @@
                 <img src="../img/HIW/flip.png" alt="img">
               </div>
               <div class="steps_text">
-                <div id="circle">&nbsp;</div>
+                <div class="circle">&nbsp;</div>
                 <div class="text">
                   <h3>Step3</h3>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
@@ -104,41 +102,42 @@
 
         </div>
       </div>
-
-      <div id="pricing"> </div>
-      <div id="our_story">
-
-      </div>
-      <!-- Contacts Section -->
-      <div id="contact">
-        <form method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbyLnUFYwF7juxOQc6Uhp5fsnIfpVeF6xtC83lhaCA/exec">
-          <fieldset class="pure-group">
-            <label for="name">Name: </label>
-            <input required id="name" name="name" />
-          </fieldset>
-
-          <fieldset class="pure-group">
-            <label for="message">Message: </label>
-            <textarea id="message" name="message" rows="10" required></textarea>
-          </fieldset>
-
-          <fieldset class="pure-group">
-            <label for="email">Phone Number (Optional):</label>
-            <input id="phone" name="phone" type="text" value="" pattern="[0-9]{10}" required />
-          </fieldset>
-
-          <fieldset class="pure-group">
-            <label for="email">Email Address:</label>
-            <input id="email" name="email" type="email" value="" required />
-            <button class="button-success pure-button button-xlarge">
-              <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-          </fieldset>
-        </form>
-      </div>
-    <footer>
-
-    </footer>
+    </div>
   </div>
+
+  <div id="pricing"> </div>
+  <div id="our_story">
+
+  </div>
+  <!-- Contacts Section -->
+  <div id="contact">
+    <form method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbyLnUFYwF7juxOQc6Uhp5fsnIfpVeF6xtC83lhaCA/exec">
+      <fieldset class="pure-group">
+        <label for="name">Name: </label>
+        <input required id="name" name="name" />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="message">Message: </label>
+        <textarea id="message" name="message" rows="10" required></textarea>
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email">Phone Number (Optional):</label>
+        <input id="phone" name="phone" type="text" value="" pattern="[0-9]{10}" required />
+      </fieldset>
+
+      <fieldset class="pure-group">
+        <label for="email">Email Address:</label>
+        <input id="email" name="email" type="email" value="" required />
+        <button class="button-success pure-button button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+      </fieldset>
+    </form>
+  </div>
+  <footer>
+
+  </footer>
   <!-- Link to the instagram feed script. -->
   <script src="../js/instafeed.min.js"></script>
   <!-- Link to the script that can be used to configure what is displayed. -->
