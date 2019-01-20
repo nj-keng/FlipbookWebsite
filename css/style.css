@@ -1,75 +1,148 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-body{
-  font-family: 'Work Sans', sans-serif;
+body {
+  font-family: 'Raleway', sans-serif;
   padding: 0;
   margin: 0;
 }
 
-.pagewrap{
+.pagewrap {
   width: 100%;
   height: 5000px;
   padding: 0;
   margin: 0;
 }
-nav{
+
+nav {
+  font-family: 'Raleway', sans-serif;
   overflow: hidden;
   background-color: rgb(158, 179, 96);
   z-index: 1;
 }
 
-nav img{
+nav img {
   width: 50px;
   //padding: 10px;
 }
 
-#nav_logo{
-   padding: 5px;
-   padding-right: 10px;
-}
-
-#home{
-  width: auto;
-  height: 500px;
-  background-color: rgb(178, 121, 210);
+#nav_logo {
+  padding: 5px;
+  padding-right: 10px;
 }
 
 /* -------------------------------------------------------------------------------- */
-
-#how_it_works{
+#home {
   width: auto;
-  height: 500px;
-  background-color: rgb(153, 212, 202);
+  height: 400px;
+  margin-top: 40px;
+  background-color: rgb(47, 129, 131);
+}
+
+#home_content {
+  display: inline-block;
+  margin: 50px 0 0 100px;
+  /* background-color: rgb(167, 159, 201); */
+}
+
+#home_content h1, p{
+  margin: 0;
+  color: white;
+}
+
+#home_content p {
+  margin-top: 20px;
+  width: 600px;
+  /* background-color: rgb(159, 201, 171); */
 }
 
 /* -------------------------------------------------------------------------------- */
+#how_it_works {
+  width: auto;
+  height: auto;
+  /* background-color: rgb(153, 212, 202); */
+}
 
-#our_story{
+#how_it_works h1 {
+  margin: 0;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  /* font-weight: bold; */
+text-shadow: 0px 4px 4px rgba(149, 145, 145, 0.31);
+}
+
+#how_it_works p{
+  color: black;
+}
+
+#how_it_works_steps {
+  background-color: rgb(255, 255, 255);
+}
+
+.steps_content {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-column-gap: 15px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.steps img {
+  width: 100%;
+  padding: 15px;
+}
+
+.steps_text {
+  margin-top: 20%;
+}
+
+div#how_it_works_steps>div:nth-of-type(even) {
+  background-color: rgb(242, 242, 242);
+}
+
+#circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(69, 191, 207);
+  float: left;
+}
+
+.text {
+  float: left;
+  width: 80%;
+  padding-left: 7px;
+
+}
+
+.text h3 {
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------------- */
+#our_story {
   width: auto;
   height: 500px;
   background-color: rgb(228, 189, 120);
 }
 
 /* -------------------------------------------------------------------------------- */
-
-#pricing{
+#pricing {
   width: auto;
   height: 500px;
   background-color: rgb(104, 144, 158);
 }
 
 /* -------------------------------------------------------------------------------- */
-
-#features{
+#features {
   width: auto;
   height: 500px;
   background-color: rgb(161, 133, 150);
 }
 
 /* -------------------------------------------------------------------------------- */
-
-
-#contact{
+#contact {
   background-color: rgb(149, 152, 86);
 }
 
@@ -84,88 +157,109 @@ $lg: 580px;
   flex-wrap: wrap;
   position: relative;
 }
+
 #igLink {
   text-decoration: none;
   color: #9f9939;
 }
+
 #igLink img {
   height: 25px;
 }
+
 #ig {
   font-size: 15pt;
   margin-top: 0px;
 }
+
 #ig img {
   //height: 50px;
   vertical-align: middle;
 }
+
 .igFeed {
   display: inline-block;
   margin: 5px;
 }
+
 .igImage {
   display: block;
 }
+
 .igCaptionLeft {
   float: left;
   margin-left: 5px;
 }
+
 .igCaptionRight {
   float: right;
 }
+
 .igIcon {
   height: 20px;
 }
+
 #instaContain {
   margin-top: 55px;
   text-align: center;
   position: relative;
 }
+
 #instafeed .igImage {
   margin: 10px;
 }
+
 #instafeed .igFeed:hover {
   filter: brightness(80%);
   transition: .5s ease;
 }
+
 .igText {
   visibility: hidden;
   transform: translateY(-90px);
   color: white;
 }
+
 .igFeed:hover .igText {
   visibility: visible;
 }
+
 .igInfo {
   text-decoration: none;
   font-size: 15pt;
 }
+
 .heart {
   float: left;
   margin-left: 20%;
 }
+
 .comment {
   float: right;
   margin-right: 20%;
 }
+
 @media screen and (max-width: 1100px) {
   #instafeed {
     width: 55%;
     margin: 0 auto;
   }
 }
+
 @media screen and (max-width: 1000px) {
   #instafeed {
     width: 66%;
     margin: 0 auto;
   }
 }
+
 @media screen and (max-width: 850px) {
   #instafeed {
     width: 85%;
     margin: 0 auto;
   }
 }
+
 @media screen and (max-width: 675px) {
   #instafeed {
     height: 200px;
