@@ -123,9 +123,10 @@ div#how_it_works_steps>div:nth-of-type(even) {
 #how_it_works_video_div {
     width: auto;
     height: auto;
-    background-color: orange;
+    background-color: rgb(189, 105, 22);
     align-content: center;
     display: grid;
+    padding-bottom: 0.5em;
 }
 
 #flipbook_video {
