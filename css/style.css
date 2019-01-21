@@ -134,9 +134,9 @@ div#how_it_works_steps>div:nth-of-type(even) {
 }
 
 #flipbook_video_description {
-    width: 35%;
+    width: 33.5%;
     padding: 1em;
-    margin-left: 38.5em;
+    margin: 0 auto;
     font-size: 11pt;
 }
 
